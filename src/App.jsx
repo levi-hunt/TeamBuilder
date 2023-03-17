@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const SearchForm = ( {onSearch} ) => {
   const [searchValue, setSearchValue] = useState('');
@@ -31,9 +32,10 @@ const SearchForm = ( {onSearch} ) => {
 const PokemonCard = ( {data} ) => {
   return (
     <div className='PokemonCard'>
-      <h5>{data.id}</h5>
+      <p>ID: {data.id}</p>
+      <i class="fa-solid fa-xmark"></i>
+      <h4>{data.name.toUpperCase()}</h4>
       <img src={data.sprites.front_default}/>
-      <h4>{data.name}</h4>
     </div>
   )
 }

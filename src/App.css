@@ -13,16 +13,31 @@ body {
   margin: 0.5rem;
   padding: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 15, 30, 0.15);
   border-radius: 10%;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  display: grid;
 }
 
-.PokemonCard h5 {
+.PokemonCard img {
+  justify-self: center;
+}
+
+.PokemonCard p {
   padding: 0px;
   margin: 0px;
+  font-size: 0.75rem;
 }
 
 .PokemonCard h4 {
   padding: 0px;
   margin: 0px;
+  font-weight: 500;
+}
+
+.PokemonCard i {
+
 }
