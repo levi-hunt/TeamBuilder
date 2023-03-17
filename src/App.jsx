@@ -33,7 +33,7 @@ const PokemonCard = ( {data} ) => {
   return (
     <div className='PokemonCard'>
       <p>ID: {data.id}</p>
-      <i class="fa-solid fa-xmark"></i>
+      <i className="fa-solid fa-xmark"></i>
       <h4>{data.name.toUpperCase()}</h4>
       <img src={data.sprites.front_default}/>
     </div>

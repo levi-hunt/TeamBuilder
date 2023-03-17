@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 .PokemonWrapper {
@@ -16,28 +17,33 @@ body {
   background-color: rgba(0, 15, 30, 0.15);
   border-radius: 10%;
   overflow: hidden;
-  align-items: center;
-  justify-content: center;
 
   display: grid;
+  grid-template-columns: [cFirst] 50% [cMiddle] 50% [cLast];
+  grid-template-rows: [rFirst] 12.5% [rSecond] 12.5% [rEndTitle] 50% [rLast];
 }
 
 .PokemonCard img {
   justify-self: center;
+  align-self: center;
+  grid-area: 3 / 1 / 4 / 3;
 }
 
 .PokemonCard p {
-  padding: 0px;
-  margin: 0px;
-  font-size: 0.75rem;
+  grid-area: 1 / 1 / 2 / 2;
+  margin: 0;
+  padding: 0;
+  font-size: 0.6rem;
 }
 
 .PokemonCard h4 {
   padding: 0px;
   margin: 0px;
   font-weight: 500;
+  grid-area: 2 / 1 / 3 / 3;
 }
 
-.PokemonCard i {
-
+.PokemonCard svg {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: end;
 }
