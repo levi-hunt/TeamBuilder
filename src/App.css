@@ -14,7 +14,7 @@ body {
   margin: 0.5rem;
   padding: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 15, 30, 0.15);
+  background-color: rgba(0, 15, 30, 0.05);
   border-radius: 10%;
   overflow: hidden;
 
@@ -27,6 +27,7 @@ body {
   justify-self: center;
   align-self: center;
   grid-area: 3 / 1 / 4 / 3;
+  overflow: hidden;
 }
 
 .PokemonCard p {
