@@ -29,13 +29,10 @@ const SearchForm = ( {onSearch} ) => {
 }
 
 const PokemonCard = ( {data} ) => {
-  const backgroundStyling = {
-    backgroundImage: `url(${data.sprites.front_default})`
-  }
-
   return (
-    <div className='PokemonCard' style={backgroundStyling}>
+    <div className='PokemonCard'>
       <h5>{data.id}</h5>
+      <img src={data.sprites.front_default}/>
       <h4>{data.name}</h4>
     </div>
   )
