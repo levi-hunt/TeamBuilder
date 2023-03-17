@@ -20,9 +20,8 @@ body {
 
   display: grid;
   grid-template-columns: [cFirst] 50% [cMiddle] 50% [cLast];
-  grid-template-rows: [rFirst] 12.5% [rSecond] 12.5% [rEndTitle] 50% [rLast];
+  grid-template-rows: [rFirst] 12.5% [rSecond] 12.5% [rEndTitle] 75% [rLast];
 }
-
 .PokemonCard img {
   justify-self: center;
   align-self: center;
