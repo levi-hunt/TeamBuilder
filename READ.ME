@@ -1,0 +1,62 @@
+Pokémon Team Builder
+
+The Pokémon Team Builder is a React application that allows users to build a team of Pokémon by searching and adding them to their team.
+Components
+
+The application is composed of three main components:
+
+1. SearchForm
+
+This component is responsible for providing the user with a form to search for Pokémon by name. It includes an input field and a submit button.
+Props:
+
+    onSearch: A callback function that receives the search result.
+
+State:
+
+    searchValue: A state variable that stores the current value of the search input.
+
+Functions:
+
+    handleSubmit: An asynchronous function that fetches the Pokémon data from the API when the form is submitted. It then calls the onSearch callback with the fetched data and resets the input value.
+
+2. PokemonCard
+
+This component displays the details of a single Pokémon in a card format.
+Props:
+
+    data: An object containing the Pokémon data.
+
+3. PokemonWrapper
+
+This component is a wrapper that maps over the Pokémon team and renders a PokemonCard component for each Pokémon.
+Props:
+
+    pokemonTeam: An array of Pokémon data objects.
+
+App Component
+
+The App component is the root component of the application. It manages the state of the Pokémon team and passes it down to the other components.
+State:
+
+    pkmnTeam: An array containing the Pokémon team data.
+
+Functions:
+
+    handleSearch: A function that takes the fetched Pokémon data and adds it to the pkmnTeam state.
+
+Components:
+
+    SearchForm: Renders the search form with the handleSearch function passed as the onSearch prop.
+    PokemonWrapper: Renders the wrapper with the pkmnTeam state passed as the pokemonTeam prop.
+
+Additional Information
+
+In the commented section at the bottom of the code, there is a working mapping example for displaying the types of a Pokémon. This can be added to the PokemonCard component if desired.
+
+javascript
+
+{data.types.map(pkmnType => (
+
+  <p>Type {pkmnType.type.name}</p>
+))}
