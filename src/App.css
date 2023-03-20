@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
 }
 
 .PokemonWrapper {
@@ -15,12 +14,11 @@ body {
   padding: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 15, 30, 0.05);
-  border-radius: 10%;
   overflow: hidden;
 
   display: grid;
   grid-template-columns: [cFirst] 50% [cMiddle] 50% [cLast];
-  grid-template-rows: [rFirst] 12.5% [rSecond] 12.5% [rEndTitle] 75% [rLast];
+  grid-template-rows: [rFirst] 12.5% [rSecond] 12.5% [rThird] 50% [rFourth] 25% [rFifth];
 }
 .PokemonCard img {
   justify-self: center;
@@ -33,17 +31,123 @@ body {
   grid-area: 1 / 1 / 2 / 2;
   margin: 0;
   padding: 0;
-  font-size: 0.6rem;
+  font-size: 0.6em;
 }
 
 .PokemonCard h4 {
   padding: 0px;
   margin: 0px;
+  text-align: center;
   font-weight: 500;
+  font-size: clamp(16px, 6vw, 32px);
   grid-area: 2 / 1 / 3 / 3;
+  font-size: 0.8em;
 }
 
 .PokemonCard svg {
   grid-area: 1 / 2 / 2 / 3;
   justify-self: end;
+}
+
+.typeWrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+.type {
+  margin: 0.1em;
+  padding: 0.1em 0.2em;
+}
+
+.type.grass {
+  background-color: #7ac74c;
+  color: #fff;
+}
+
+.type.fire {
+  background-color: #ee8130;
+  color: #fff;
+}
+
+.type.water {
+  background-color: #6390f0;
+  color: #fff;
+}
+
+.type.bug {
+  background-color: #a6b91a;
+  color: #fff;
+}
+
+.type.normal {
+  background-color: #a8a77a;
+  color: #fff;
+}
+
+.type.poison {
+  background-color: #a33ea1;
+  color: #fff;
+}
+
+.type.electric {
+  background-color: #f7d02c;
+  color: #fff;
+}
+
+.type.ground {
+  background-color: #e2bf65;
+  color: #fff;
+}
+
+.type.fairy {
+  background-color: #d685ad;
+  color: #fff;
+}
+
+.type.fighting {
+  background-color: #c22e28;
+  color: #fff;
+}
+
+.type.psychic {
+  background-color: #f95587;
+  color: #fff;
+}
+
+.type.rock {
+  background-color: #b6a136;
+  color: #fff;
+}
+
+.type.ghost {
+  background-color: #735797;
+  color: #fff;
+}
+
+.type.ice {
+  background-color: #96d9d6;
+  color: #fff;
+}
+
+.type.dragon {
+  background-color: #6f35fc;
+  color: #fff;
+}
+
+.type.dark {
+  background-color: #705746;
+  color: #fff;
+}
+
+.type.steel {
+  background-color: #b7b7ce;
+  color: #fff;
+}
+
+.type.flying {
+  background-color: #a98ff3;
+  color: #fff;
 }
