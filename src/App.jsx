@@ -43,7 +43,7 @@ const PokemonCard = ({ data }) => {
             key={pkmnType.type.name}
             className={`type ${pkmnType.type.name}`}
           >
-            {pkmnType.type.name}
+            {pkmnType.type.name.toUpperCase()}
           </span>
         ))}
       </div>
